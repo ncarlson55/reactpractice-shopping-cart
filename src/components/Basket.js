@@ -19,13 +19,12 @@ export default function Basket(props) {
             </button>
           </div>
           <div className="col-2 text-right">
-            {item.qty} x ${item.price} 
+            {item.qty} x ${item.price.toFixed(2)}
           </div>
         </div>
       ))}
     </aside>
   );
 }
-
 
 // .toFixed(2) for line22 item.price
